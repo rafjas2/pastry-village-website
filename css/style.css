@@ -1,0 +1,386 @@
+html {
+box-sizing:border-box;
+}
+*,*:before, *:after{
+box-sizing:inherit;
+}
+a {
+    text-decoration: none;
+    color: #603813;
+}
+section.info a:hover, ul.contact li a:hover, ul.social-media li a:hover {
+    color: #f9a64a;
+}
+
+
+body#wrap {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #603813; 
+}
+/*==========Header=========*/
+header {
+   width: 100%;  
+}
+ul.contact {
+    margin-left: 20px;
+    float: left;
+}
+ul.contact li {
+    font-size: 18px;
+    float: left;
+	line-height: 60px;
+	margin-right: 10px;
+}
+
+ul.social-media {
+    margin-right: 20px;
+    float: right;
+}
+ul.social-media li {
+    font-size: 33px;
+    float: left;
+	line-height: 60px;
+	margin-left: 10px;
+}
+ul.social-media li:last-child {
+    margin-left: 20px;
+}
+
+header img {
+    width: 15%;
+    margin: 30px 42.5% 0;
+}
+
+header nav {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 3px  solid #f9a64a; 
+}
+
+header nav ul li {
+    float: left;
+    width: 20%;
+    border: 2px solid #fff;
+}
+
+header nav ul li a {
+    display: block;
+    color: #603813;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0.5%;
+}
+header nav ul li.active {
+    background-color: #f9a64a;
+    border: 2px solid #603813;
+    border-radius: 50% 50% 0 0;
+}
+header nav ul li:hover {
+    background-color: #f9a64a;
+    border: 2px solid #f9a64a;
+    border-radius: 50% 50% 0 0;
+}
+
+/*======================Home page=================*/
+
+/*================Slider===============*/
+
+#slide {
+    width: 100%;
+    overflow: hidden;
+}
+#slide ul {
+   position: relative;
+   width: 400%;
+   animation: 16s slid infinite; 
+}
+@keyframes slid {
+    0% {left: 0%;}
+    33.323% {left: 0%;}
+    33.333% {left: -100%;}
+    66.656% {left: -100%;}
+    66.666% {left: -200%;}
+    99.989% {left: -200%;}
+    100% {left: -300%;}
+    }
+ #slide ul:hover {
+     animation-play-state: paused; 
+ }   
+
+#slide li {
+    float: left;
+    width: 25%;
+}
+#slide  img {
+    width: 100%;
+    display: block;
+}
+
+
+/*=========Introducing============*/
+section.intro, section.drink-cake-pastry, section.wedding-special {
+    width: 100%;
+}
+section.intro img.ray-top, section.intro img.ray-bottom {
+   width: 15%;
+}
+section.intro img.ray-top {
+    margin: 40px 42.5% 20px;
+}
+section.intro img.ray-bottom {
+    margin: 20px 42.5% 40px;
+}
+section.intro h1 {
+    font-family: Perpetua, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+section.intro p {
+    width: 60%;
+    margin: 20px 20% 0;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: justify;
+}
+/*===========Section Drinks, Caks, Pastrys==========*/
+
+section.drink-cake-pastry {
+    float: left;
+    width: 32.6%;
+    height: auto;
+    position: relative;
+    background-color: #603813; 
+}
+section.drink-cake-pastry:nth-child(2) {
+    margin: 0 1% 1%;
+}  
+
+section.drink-cake-pastry a img {
+    width: 100%;  
+    display: block;
+    opacity: 0.3;
+    
+}
+
+/*==========Section Wedding, Special Ocasions=======*/
+section.wedding-special {
+    float: left;
+    width: 49.5%;
+    margin-bottom: 4%;
+    position: relative;
+    background-color: #603813; 
+}
+section.wedding-special:last-child {
+    margin-left: 1%;
+}
+section.wedding-special a img {
+    width: 100%; 
+    display: block;
+    opacity: 0.2; 
+}
+.center {
+    height: auto;
+    color: #fff;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+
+/*================================ About Page =============================*/
+
+img.pastry-chef {
+    width: 40%;
+    height: auto;
+    float: right;
+    display: block;
+    margin: .4% 0 0 2%;
+
+}
+
+/*==============================Products Page =============================*/
+
+.kids {
+    width: 100%;
+}
+.kids img {
+    width: 33.3%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+/*===========Contact page========*/
+.detils h1, .map h2, #form h2 {
+    margin: 8% 0 5%;
+    font-size:30px;
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.detils {
+    width:100%;   
+    text-align: center;
+    font-weight: bold;  
+}
+.location a:hover {
+    color: #f9a64a;
+}
+
+.location {
+    width: 33.3%;
+    padding: 0 2%;
+    float: left;
+}
+.location p:first-child {
+    font-size:30px; 
+}
+.location p {
+    line-height: 1.5;
+    font-size: 20px;  
+}
+.map {
+    width: 100%;
+    
+}
+.map iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/*==============Contact Page-form===========*/
+#form label {
+    font-size: 18px;
+    width: 30%;
+    margin: 0 35%;
+}
+#form input[type=text], #form input[type=email] {
+    width: 30%;
+    font-size:16px;
+    padding: 0.5% 1%;
+    margin: 0.5% 35%;
+    border: 2px solid #f9a64a;
+    border-radius: 5px;
+}
+#form label#message, #form textarea {
+    width: 40%;
+    margin: 0.5% 30%;
+    
+}
+#form textarea {
+    font-size:16px;
+    padding: 0.5% 1%;
+    border: 2px solid #f9a64a;
+    border-radius: 5px;
+}
+
+#form input[type=submit] {
+    width: 10%;
+    padding: 0.5%;
+    margin: 2% 45% 4%;
+    font-size: 18px;
+    color: #603813;
+    background-color: #f9a64a;
+    border: 2px solid #f9a64a;
+    border-radius: 5px;
+}
+#form input[type=submit]:hover {
+   border: 2px solid #603813;
+}
+
+
+/*=========Footer==========*/
+ footer {
+     width: 100%;
+     color: #fff;
+     background-color: #603813;
+ }
+ section.info {
+     width: 25%;
+     float: left;     
+     padding: 0 3%;
+     margin-bottom: 30px;
+ }
+ section.info h4 {
+     margin: 30px 0;
+    font-size: 20px;
+ }
+ section.info ul li {
+     font-size: 16px;
+     line-height: 1.5;
+ }
+
+ section.line_height ul li {
+    line-height: 2;
+ }
+ section.info a {
+    color: #fff;
+}
+section.info iframe {
+    width: 100%;
+    height: 168px;
+    border: 4px solid #f9a64a;
+    border-radius: 5px;
+}
+
+ footer h5 {
+     width: 100%;
+     font-size: 14px;
+     padding-bottom: 10px;
+     text-align: center;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1400px) {
+    body#wrap {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

@@ -7,14 +7,16 @@
     <meta name="description" content="portfolio">
     <meta name="keywords" content="HTML">
     <meta name="author" content="Rafal Jasinski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body id="wrap">
+    <a href="#wrap" class="scroll-up"><i class="fas fa-arrow-circle-up"></i></a>
 <!--================Header================-->
 <header class="cf"> 
     
@@ -24,16 +26,29 @@
         </ul>
         <ul class="social-media"> 
            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-           <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
            <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-           <li class="shoping-bag"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+           <li class="shoping-bag"><div><i class="fas fa-shopping-bag"></i><span id="itemCount"></span></div></li>
         </ul> 
+        <div id="shoppingCart">
+            <div id="cartItems">
+              <h2>Items in your cart</h2>
+              <span><i class="fas fa-times"></i></span>
+              <div id="cartTotal"></div>  
+          </div>
+          </div>
 
-        <a href="index.html"><img src="img/logo-pastry-village.svg" alt="crossant with name pastry village"></a>
+        <a href="index.html">
+            <img src="img/logo-pastry-village.svg" alt="crossant with name pastry village">
+        </a>
 
         <!--================Main Navigation=================-->    
-   <nav class="cf">
+   <nav class="cf main-nav">
+        <div class="icon-nav">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
        <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -44,21 +59,6 @@
    </nav>
 </header> 
 <!--================Slider================-->
-<!--<div id="slider">
-    <input checked type='radio' name='slider' id='slide1'/>
-    <input type='radio' name='slider' id='slide2'/>
-    <input type='radio' name='slider' id='slide3'/>
-
-    <div id="commands">
-        <label for='slide1'></label>
-        <label for='slide2'></label>
-        <label for='slide3'></label>
-    </div>
-    <div id="active">
-        <label for='slide1'></label>
-        <label for='slide2'></label>
-        <label for='slide3'></label>
-    </div>-->
 
 <div id="slide">
     <ul>
@@ -76,7 +76,6 @@
         </li>
     </ul>  
 </div> 
-</div>
 
 <section class="intro">
     <img src="img/ray-top.svg" alt="ray" class="ray-top">
@@ -86,26 +85,30 @@
     <img src="img/ray-bottom.svg" alt="ray" class="ray-bottom">
 </section>
 <div class="cf">
-<section class="drink-cake-pastry ">
-    <a href=""><img src="img/drink.jpeg" alt="cup of coffe"></a>
+<section class="special-links">
+    <a href="products.html#drinks"><img src="img/drink.jpeg" alt="cup of coffee"></a>
     <h2 class="center">DRINKS</h2>
 </section>
-<section class="drink-cake-pastry margin1 ">
-    <a href=""><img src="img/cake.jpeg" alt="cake"></a>
+<section class="special-links">
+    <a href="products.html#cakes"><img src="img/cake.jpeg" alt="cake"></a>
     <h2 class="center">CAKES</h2>
 </section>
-<section class="drink-cake-pastry ">
-    <a href=""><img src="img/pastry.jpeg" alt="pastry"></a>
+<section class="special-links">
+    <a href="products.html#pastry"><img src="img/pastry.jpeg" alt="pastry"></a>
     <h2 class="center">PASTRY</h2>
 </section>
-<section class="wedding-special margin2 ">
-    <a href=""><img src="img/wedding.jpeg" alt="wedding cake"></a>
+<section class="special-links">
+    <a href="products.html#wedding"><img src="img/wedding.jpeg" alt="wedding cake"></a>
     <h2 class="center">WEDDING</h2>
 </section>
-<section class="wedding-special ">
-    <a href=""><img src="img/special-ocasion.jpg" alt="birthday cake"></a>
+<section class="special-links">
+    <a href="products.html#special"><img src="img/special.jpg" alt="birthday cake"></a>
     <h2 class="center">SPECIAL OCCASION</h2>
 </section>
+<section class="special-links">
+        <a href="products.html#bread"><img src="img/bread.jpeg" alt="breads"></a>
+        <h2 class="center">BREAD</h2>
+    </section>
 </div>
 <!--================Footer==================-->
 <footer>
@@ -143,7 +146,12 @@
        <h4>Map</h4>
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8757364740704!2d-6.2662083841615885!3d53.34548057997884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e832da5ff23%3A0xcfee069df358e947!2s46+Temple+Bar%2C+Dublin+2!5e0!3m2!1sen!2sie!4v1523873671380" allowfullscreen></iframe> 
    </section> 
-      <h5><i class="far fa-copyright"></i>Pastry Village 2018 All Rights Reserved.</h5>
+   <ul class="social-media-footer"> 
+    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+    <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+ </ul> 
+      <h5><span>&copy;</span>Pastry Village 2018 All Rights Reserved.</h5>
 </footer>
 
 

@@ -1,267 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pastry Village</title>
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <meta charset="UTF-8">
-    <meta name="description" content="portfolio">
-    <meta name="keywords" content="HTML">
-    <meta name="author" content="Rafal Jasinski">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
+	<title>Pastry Village</title>
+	<link href="img/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+	<meta charset="UTF-8">
+	<meta content="portfolio" name="description">
+	<meta content="HTML" name="keywords">
+	<meta content="Rafal Jasinski" name="author">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+	<script src="js/jquery.js">
+	</script>
+	<script src="js/script.js">
+	</script>
 </head>
-
 <body id="wrap">
-    <a href="#wrap" class="scroll-up"><i class="fas fa-arrow-circle-up"></i></a>
-<header> 
-    
-        <ul class="contact">
-           <li><i class="fas fa-phone"></i> 01435874</li> 
-            <li><a  href="https://goo.gl/maps/yuWQ7yVrPzy" target="_blank"><i class="fas fa-map-marker-alt"></i> 46 Temple Bar, Dublin</a></li>
-        </ul>
-        <ul class="social-media"> 
-           <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-           <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
-           <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-           <li class="shoping-bag"><div><i class="fas fa-shopping-bag"></i><span id="itemCount"></span></div></li>
-        </ul> 
-        <div id="shoppingCart">
-            <div id="cartItems">
-              <h2>Items in your cart</h2>
-              <span><b>&times;</b></span>
-              <div id="cartTotal"></div>
-              
-          </div>
-          </div>
-
-        <a href="index.html"><img src="img/logo-pastry-village.svg" alt="crossant with name pastry village"></a>
-    
-   <nav class="cf main-nav">
-        <div class="icon-nav">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-       <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li class="active"><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-   </nav>
-</header>
-<ul class="shop-nav cf">
-    <li><a href="#shop-kids">Kids cake</a></li>
-    <li><a href="#shop-wedding">Wedding cakes</a></li>
-    <li><a href="#shop-special">Special occasion</a></li>
-</ul>
-<section id="shop-kids" class="cf">
-        <img src="img/ray-top.svg" alt="ray" class="ray-top">
-        <h1>Kids cakes</h1>
-        <figure class="shop">
-            <img class="photo" src="img/products/kids-cakes/choo-choo-kids-cake.jpg" alt="choo choo kids cake">
-            <figcaption>
-                <h3>Choo choo cake</h3>
-                <div class="price">€<span class="priceCount">5</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption> 
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/kids-cakes/donald-duck-kids-cake.jpg" alt="donald duck kids cake">
-            <figcaption>
-                <h3>Donald duck  cake</h3>
-                <div class="price">€<span class="priceCount">5</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>     
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/kids-cakes/happy-cow-kids-cake.jpg" alt="happy cow kids cake">
-            <figcaption>
-                <h3>Happy cow cake</h3>
-                <div class="price">€<span class="priceCount">5</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/kids-cakes/mr-chesse-kids-cake.jpg" alt="mr chesse kids cake">
-            <figcaption>
-                <h3>Mr chesse cake</h3>
-                <div class="price">€<span class="priceCount">5</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/kids-cakes/pony-kids-cake.jpg" alt="pony kids cake">
-            <figcaption>
-                <h3>Pony cake</h3>
-                <div class="price">€<span class="priceCount">5</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/kids-cakes/racer-kids-cake.jpg" alt="racer kids cake">
-            <figcaption>
-                <h3>Racer cake</h3>
-                <div class="price">€<span class="priceCount">5</span></div>
-                <button class="add-to-cart">Add to Cart</button>  
-            </figcaption>       
-        </figure>
-</section>
-<section id="shop-wedding" class="cf">
-        <img src="img/ray-top.svg" alt="ray" class="ray-top">
-        <h2>Wedding cakes</h2>
-        <figure class="shop">
-            <img class="photo" src="img/products/wedding-cakes/beautyful-moment-wedding-cake.jpg" alt="beautyful moment wedding cake">
-            <figcaption>
-                <h3>Beatyful moment cake</h3>
-                <div class="price">€<span class="priceCount">40</span></div>
-                <button class="add-to-cart">Add to Cart</button> 
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/wedding-cakes/butterfly-wedding-cake.jpg" alt="butterfly wedding cake">
-            <figcaption>
-                <h3>Butterfly cake</h3>
-                <div class="price">€<span class="priceCount">35</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/wedding-cakes/love-wedding-cake.jpg" alt="love wedding cake">
-            <figcaption>
-                <h3>Love cake</h3>
-                <div class="price">€<span class="priceCount">30</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/wedding-cakes/rustic-wedding-cake.jpg" alt="rustic wedding cake">
-            <figcaption>
-                <h3>Rustic cake</h3>
-                <div class="price">€<span class="priceCount">50</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/wedding-cakes/subtle-lace-wedding-cake.jpg" alt="subtle lace wedding cake">
-            <figcaption>
-                <h3>Subtle lace cake</h3>
-                <div class="price">€<span class="priceCount">45</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/wedding-cakes/wedding-spell.jpg" alt="wedding spell cake">
-            <figcaption>
-                <h3>Wedding spell cake</h3>
-                <div class="price">€<span class="priceCount">40</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-</section>
-<section id="shop-special" class="cf">
-        <img src="img/ray-top.svg" alt="ray" class="ray-top">
-        <h2>Special occasion</h2>
-        <figure class="shop">
-            <img class="photo" src="img/products/special-occasion/andalusia-cake.jpg" alt="andalusia cake">
-            <figcaption>
-                <h3>Andalusia cake</h3>
-                <div class="price">€<span class="priceCount">10</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/special-occasion/black-forest.jpg" alt="black forest cake">
-            <figcaption>
-                <h3>Black forest cake</h3>
-                <div class="price">€<span class="priceCount">10</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/special-occasion/cassis-cake.jpg" alt="cassis cake">
-            <figcaption>
-                <h3>Cassis cake</h3>
-                <div class="price">€<span class="priceCount">10</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/special-occasion/chocolate-cake.jpg" alt="chocolate cake">
-            <figcaption>
-                <h3>Chocolate cake</h3>
-                <div class="price">€<span class="priceCount">10</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/special-occasion/cookies-cake.jpg" alt="cookies cake">
-            <figcaption>
-                <h3>Cookies cake</h3>
-                <div class="price">€<span class="priceCount">10</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <figure class="shop">
-            <img class="photo" src="img/products/special-occasion/crunchy-raspberry-cake.jpg" alt="raspberry cake">
-            <figcaption>
-                <h3>Raspberry cake</h3>
-                <div class="price">€<span class="priceCount">10</span></div>
-                <button class="add-to-cart">Add to Cart</button>
-            </figcaption>
-        </figure>
-        <img src="img/ray-top.svg" alt="ray" class="ray-top">
-</section>
-<footer>
-   <section class="info">
-       <h4>Menu</h4>
-       <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
-       </ul>
-   </section>
-   <section class="info">
-       <h4>Opening Houers</h4>
-       <ul>
-           <li>Monday 8:00am - 6:00pm</li>
-           <li>Tuesday 8:00am - 6:00pm</li>
-           <li>Wednesday 8:00am - 6:00pm</li>
-           <li>Thursday 8:00am - 6:00pm</li>
-           <li>Friday 8:00am - 6:00pm</li>
-           <li>Saturday 10:00am - 9:00pm</li>
-           <li>Sunday 10:00am - 6:00pm</li>
-       </ul>
-   </section>
-   <section class="info line_height">
-       <h4>Location</h4>
-       <ul>
-           <li><i class="fas fa-phone"></i> 01435874</li>
-           <li><a href="contact.html#form"><i class="fas fa-envelope"></i> pastry_village@gmail.com</a></li>
-           <li><a href="https://goo.gl/maps/yuWQ7yVrPzy" target="_blank"><i class="fas fa-map-marker-alt"></i> 46  Temple Bar, Dublin</a></li>
-       </ul>
-   </section>
-   <section class="info">
-       <h4>Map</h4>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8757364740704!2d-6.2662083841615885!3d53.34548057997884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e832da5ff23%3A0xcfee069df358e947!2s46+Temple+Bar%2C+Dublin+2!5e0!3m2!1sen!2sie!4v1523873671380" allowfullscreen></iframe> 
-   </section>
-        <ul class="social-media-footer"> 
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        </ul> 
-      <h5><span>&copy;</span>Village 2018 All Rights Reserved.</h5>
-</footer>
-
-
+	<a class="scroll-up" href="#wrap"><i class="fas fa-arrow-circle-up"></i></a>
+	<header>
+		<ul class="contact">
+			<li><i class="fas fa-phone"></i> 01435874</li>
+			<li>
+				<a href="https://goo.gl/maps/yuWQ7yVrPzy" target="_blank"><i class="fas fa-map-marker-alt"></i> 46 Temple Bar, Dublin</a>
+			</li>
+		</ul>
+		<ul class="social-media">
+			<li>
+				<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square"></i></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+			</li>
+			<li class="shoping-bag">
+				<div>
+					<i class="fas fa-shopping-bag"></i><span id="itemCount"></span>
+				</div>
+			</li>
+		</ul>
+		<div id="shoppingCart">
+			<div id="cartItems">
+				<h2>Items in your cart</h2><span><b>&times;</b></span>
+				<div id="cartTotal"></div>
+			</div>
+		</div><a href="index.html"><img alt="crossant with name pastry village" src="img/logo-pastry-village.svg"></a>
+		<nav class="cf main-nav">
+			<div class="icon-nav">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="products.html">Products</a>
+				</li>
+				<li class="active">
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<ul class="shop-nav cf">
+		<li>
+			<a href="#shop-kids">Kids cake</a>
+		</li>
+		<li>
+			<a href="#shop-wedding">Wedding cakes</a>
+		</li>
+		<li>
+			<a href="#shop-special">Special occasion</a>
+		</li>
+	</ul>
+	<section class="cf" id="shop-kids">
+		<img alt="ray" class="ray-top" src="img/ray-top.svg">
+		<h1>Kids cakes</h1>
+		<figure class="shop">
+			<img alt="choo choo kids cake" class="photo" src="img/products/kids-cakes/choo-choo-kids-cake.jpg">
+			<figcaption>
+				<h3>Choo choo cake</h3>
+				<div class="price">
+					€<span class="priceCount">5</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="donald duck kids cake" class="photo" src="img/products/kids-cakes/donald-duck-kids-cake.jpg">
+			<figcaption>
+				<h3>Donald duck cake</h3>
+				<div class="price">
+					€<span class="priceCount">5</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="happy cow kids cake" class="photo" src="img/products/kids-cakes/happy-cow-kids-cake.jpg">
+			<figcaption>
+				<h3>Happy cow cake</h3>
+				<div class="price">
+					€<span class="priceCount">5</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="mr chesse kids cake" class="photo" src="img/products/kids-cakes/mr-chesse-kids-cake.jpg">
+			<figcaption>
+				<h3>Mr chesse cake</h3>
+				<div class="price">
+					€<span class="priceCount">5</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="pony kids cake" class="photo" src="img/products/kids-cakes/pony-kids-cake.jpg">
+			<figcaption>
+				<h3>Pony cake</h3>
+				<div class="price">
+					€<span class="priceCount">5</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="racer kids cake" class="photo" src="img/products/kids-cakes/racer-kids-cake.jpg">
+			<figcaption>
+				<h3>Racer cake</h3>
+				<div class="price">
+					€<span class="priceCount">5</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+	</section>
+	<section class="cf" id="shop-wedding">
+		<img alt="ray" class="ray-top" src="img/ray-top.svg">
+		<h2>Wedding cakes</h2>
+		<figure class="shop">
+			<img alt="beautyful moment wedding cake" class="photo" src="img/products/wedding-cakes/beautyful-moment-wedding-cake.jpg">
+			<figcaption>
+				<h3>Beatyful moment cake</h3>
+				<div class="price">
+					€<span class="priceCount">40</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="butterfly wedding cake" class="photo" src="img/products/wedding-cakes/butterfly-wedding-cake.jpg">
+			<figcaption>
+				<h3>Butterfly cake</h3>
+				<div class="price">
+					€<span class="priceCount">35</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="love wedding cake" class="photo" src="img/products/wedding-cakes/love-wedding-cake.jpg">
+			<figcaption>
+				<h3>Love cake</h3>
+				<div class="price">
+					€<span class="priceCount">30</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="rustic wedding cake" class="photo" src="img/products/wedding-cakes/rustic-wedding-cake.jpg">
+			<figcaption>
+				<h3>Rustic cake</h3>
+				<div class="price">
+					€<span class="priceCount">50</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="subtle lace wedding cake" class="photo" src="img/products/wedding-cakes/subtle-lace-wedding-cake.jpg">
+			<figcaption>
+				<h3>Subtle lace cake</h3>
+				<div class="price">
+					€<span class="priceCount">45</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="wedding spell cake" class="photo" src="img/products/wedding-cakes/wedding-spell.jpg">
+			<figcaption>
+				<h3>Wedding spell cake</h3>
+				<div class="price">
+					€<span class="priceCount">40</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+	</section>
+	<section class="cf" id="shop-special">
+		<img alt="ray" class="ray-top" src="img/ray-top.svg">
+		<h2>Special occasion</h2>
+		<figure class="shop">
+			<img alt="andalusia cake" class="photo" src="img/products/special-occasion/andalusia-cake.jpg">
+			<figcaption>
+				<h3>Andalusia cake</h3>
+				<div class="price">
+					€<span class="priceCount">10</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="black forest cake" class="photo" src="img/products/special-occasion/black-forest.jpg">
+			<figcaption>
+				<h3>Black forest cake</h3>
+				<div class="price">
+					€<span class="priceCount">10</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="cassis cake" class="photo" src="img/products/special-occasion/cassis-cake.jpg">
+			<figcaption>
+				<h3>Cassis cake</h3>
+				<div class="price">
+					€<span class="priceCount">10</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="chocolate cake" class="photo" src="img/products/special-occasion/chocolate-cake.jpg">
+			<figcaption>
+				<h3>Chocolate cake</h3>
+				<div class="price">
+					€<span class="priceCount">10</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="cookies cake" class="photo" src="img/products/special-occasion/cookies-cake.jpg">
+			<figcaption>
+				<h3>Cookies cake</h3>
+				<div class="price">
+					€<span class="priceCount">10</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure>
+		<figure class="shop">
+			<img alt="raspberry cake" class="photo" src="img/products/special-occasion/crunchy-raspberry-cake.jpg">
+			<figcaption>
+				<h3>Raspberry cake</h3>
+				<div class="price">
+					€<span class="priceCount">10</span>
+				</div><button class="add-to-cart">Add to Cart</button>
+			</figcaption>
+		</figure><img alt="ray" class="ray-top" src="img/ray-top.svg">
+	</section>
+	<footer>
+		<section class="info">
+			<h4>Menu</h4>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="products.html">Products</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</section>
+		<section class="info">
+			<h4>Opening Houers</h4>
+			<ul>
+				<li>Monday 8:00am - 6:00pm</li>
+				<li>Tuesday 8:00am - 6:00pm</li>
+				<li>Wednesday 8:00am - 6:00pm</li>
+				<li>Thursday 8:00am - 6:00pm</li>
+				<li>Friday 8:00am - 6:00pm</li>
+				<li>Saturday 10:00am - 9:00pm</li>
+				<li>Sunday 10:00am - 6:00pm</li>
+			</ul>
+		</section>
+		<section class="info line_height">
+			<h4>Location</h4>
+			<ul>
+				<li><i class="fas fa-phone"></i> 01435874</li>
+				<li>
+					<a href="contact.html#form"><i class="fas fa-envelope"></i> pastry_village@gmail.com</a>
+				</li>
+				<li>
+					<a href="https://goo.gl/maps/yuWQ7yVrPzy" target="_blank"><i class="fas fa-map-marker-alt"></i> 46 Temple Bar, Dublin</a>
+				</li>
+			</ul>
+		</section>
+		<section class="info">
+			<h4>Map</h4><iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8757364740704!2d-6.2662083841615885!3d53.34548057997884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e832da5ff23%3A0xcfee069df358e947!2s46+Temple+Bar%2C+Dublin+2!5e0!3m2!1sen!2sie!4v1523873671380"></iframe>
+		</section>
+		<ul class="social-media-footer">
+			<li>
+				<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-square"></i></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+			</li>
+		</ul>
+		<h5><span>&copy;</span>Village 2018 All Rights Reserved.</h5>
+	</footer>
 </body>
 </html>

@@ -89,30 +89,29 @@ ul.social-media li:last-child {
   }
 
   #shoppingCart {
-    width: 350px;
+    width: 100%;
+    height: 100%;
     display: none;
     position: fixed;
-    top: 10%;
+    top: 0;
     right: 0;
-    z-index: 200;
-    border-radius: 10px 0 0 10px;
+    z-index: 400;
     background-color: rgb(96, 59, 19);
     background-color: rgba(96, 59, 19, .8);
   }
   
   #cartItems {
     position: relative;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 500px;
+    top: 7.5%;
+    width: 650px;
+    margin: auto;
+    height: 85%;
     padding: 2% 5%;
     box-shadow: 0 0 10px black;
     background: #fff;
     overflow-y:auto;
     border: 4px solid #f9a64a;
-    border-right: none;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
   }
 
   #cartItems h2 {
@@ -123,13 +122,15 @@ ul.social-media li:last-child {
   }
   
   #cartItems > span {
-    position: fixed;
-    top: 12%;
-    right: 2%;
-    font-size: 30px;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    font-size: 50px;
     cursor: pointer;
     z-index: 2;
   }
+  
+
   #cartItems > span:hover {
       color: #f9a64a;
   }
@@ -143,14 +144,13 @@ ul.social-media li:last-child {
   }
   
   #cartItems .photo {
-    width: 92%;
-    margin: 0 8% 0 0;
+    width: 60%;
+    margin: auto;
     display: block;
     z-index: 0;
   }
   #cartItems figcaption {
-      width: 92%;
-      margin: 0 8% 0 0;
+      width: 100%;
       opacity: 1;
       position: static;
       z-index: 0;
@@ -174,7 +174,7 @@ ul.social-media li:last-child {
       display: none;
   }
   #cartTotal {
-      width: 92%;
+      width: 82%;
       margin: 0 8% 10px 0;
       font-size: 18px;
       line-height: 2.5;
@@ -189,7 +189,7 @@ ul.social-media li:last-child {
   .removeItem  {
     
     position: relative;
-    left: 38%; top: -28px;
+    left: 30%; top: -28px;
     cursor: pointer;
     font-size: 26px;
   }
@@ -436,8 +436,7 @@ section h1, section h2 {
   .modal {
     display: none;
     position: fixed;
-    z-index: 200;
-    padding-top: 100px;
+    z-index: 300;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -449,11 +448,10 @@ section h1, section h2 {
   }
   .close {
     position: absolute;
-    top: 4%;
-    right: 2.5%;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
+    top: 1%;
+    right: 5%;
+    color:#603813;
+    font-size: 60px;
     transition: 0.5s;
   }
   .close:hover,
@@ -462,16 +460,23 @@ section h1, section h2 {
     text-decoration: none;
     cursor: pointer;
   }
+  .modal-box {
+      width: 500px;
+      position: relative; 
+      top: 50%;
+      transform: translate(0%,-50%);
+      margin: auto;
+  }
   .modal-image {
     display: block;
-    width: 50%;
-    margin: 0 auto;
-  }
- .modal div.detils {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
     background-color: #fff;
   }
+  .modal div.detils {
+    width: 100%;
+    background-color: #fff;
+  }
+ 
   .modal div.detils h3, .modal div.detils p {
     width: 90%;
     line-height: 1.5;
@@ -788,6 +793,16 @@ footer h5 span {
 /*=========================================Media Query===============================*/
 
 @media all and (max-width: 970px) {
+
+    /*===========Header================*/
+    #cartItems {
+        width: 500px;
+      }
+     
+      #cartItems .photo {
+        width: 50%;
+      }
+
     /*========Home==========*/
     a.scroll-up {
         font-size: 40px;
@@ -817,6 +832,9 @@ footer h5 span {
     .products figcaption {
         font-size: 18px;
         line-height: 2;
+    }
+    .modal-box {
+        width: 400px;
     }
 
     /*===========Shop==============*/
@@ -870,10 +888,31 @@ footer h5 span {
 @media all and (max-width: 760px) {
     /*============Header==========*/
     
-    ul.contact, ul.social-media {
+    ul.contact, ul.social-media li {
         display: none;
+        line-height: 40px;
+        z-index: 400; 
+        position: fixed;
+        right:2%; top:0;
     }
-
+    ul.social-media li:last-child {
+        display: block;
+        z-index: 999;
+        color: #f9a64a;
+    }
+    .shoping-bag #itemCount {
+        top: 37%;
+    } 
+     #cartItems {
+         width: 65%;
+     }
+      #cartItems > span {
+        top: 0;
+      }
+      #cartItems .photo {
+        width: 70%;
+      }
+    
     header a img {
         width: 150px;
         margin-top: 80px;
@@ -885,8 +924,9 @@ footer h5 span {
         border: 0;
         margin-top: 0;
         z-index: 300;
+        text-align: left;
     }
-    .main-nav.icon-nav {
+    .icon-nav {
         display: inline-block;
         cursor: pointer;
     }
@@ -911,6 +951,7 @@ footer h5 span {
     }
     .main-nav ul {
         display: none;
+        text-align: center;
     }
     .main-nav ul li {
         border: 2px solid #f9a64a;
@@ -995,8 +1036,11 @@ footer h5 span {
     .products-nav-1, .products-nav-2, .shop-nav {
         display: none;
     }
-    .modal-image, .modal div.detils {
-        width: 70%;
+    .modal-box {
+        width: 60%;
+    }
+    .close {
+        font-size: 50px;
     }
     /*================Shop Page=========================*/
    
@@ -1067,6 +1111,18 @@ footer h5 span {
 }
 /*=========================================Media 480px===========================*/
 @media all and (max-width: 480px) {
+    /*=======================Header=====================*/
+     #cartItems {
+        width: 90%;
+      }
+    
+      
+      #cartItems .photo {
+        width: 70%;
+      }
+
+
+
     /*=================Home==========================*/
     section.special-links {
         width: 100%;
@@ -1087,13 +1143,17 @@ footer h5 span {
         width: 100%;
         margin:0;
     }
-    .modal-image, .modal div.detils {
+    .modal-box {
         width: 90%;
     }
+    
     #bread .products:nth-child(11), #shop-special .shop:nth-child(1n+7) {
         margin: 0;
     }
-    .products:nth-child(1n+1), #bread .products:nth-child(1n+1), .shop:nth-child(1n+1), #shop-special .shop:nth-child(1n+1) {
+    .products:nth-child(1n+1), 
+    #bread .products:nth-child(1n+1), 
+    .shop:nth-child(1n+1), 
+    #shop-special .shop:nth-child(1n+1) {
      margin-bottom: 10%;
     }
     /*====================Contact page=================*/

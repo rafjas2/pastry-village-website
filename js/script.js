@@ -7,17 +7,17 @@ $(function() {
 
 /*================Modal for Products page=============*/
     var photo = $(".photo"),
-        model = $(".modal"),
+        modal = $(".modal"),
         close = $(".close"),
         img = $(".modal-image");
 
     photo.on("click", function() {
-        $(this).siblings().show("slow");
+        $(this).siblings().fadeIn("slow");
         img.attr("src", $(this).attr("src"));
   });
 
   close.on("click", function() {
-    model.hide(500);
+    modal.fadeOut(1000);
 
   });
   
@@ -69,7 +69,7 @@ $(function() {
       $("html").animate({scrollTop:0}, 3000);
   });
 
- /*==============Shoping-bag getting position fixed after scroll down 50px======================*/
+ /*==============Shoping-bag getting position fixed after scroll down 40px======================*/
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
@@ -79,6 +79,7 @@ $(function() {
       $("li.shoping-bag").removeClass("bag-fixed");
     }
   });
+
 
   
   var itemCount = 0;
@@ -98,7 +99,7 @@ $('.add-to-cart').click(function (){
 
 // Hide and Show Cart Items
 $('.shoping-bag, #cartItems span').click(function(){
-  $('#shoppingCart').slideToggle(500);
+  $('#shoppingCart').fadeToggle(1000);
 });
 
 

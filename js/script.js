@@ -17,11 +17,12 @@ $(function() {
 	});
 	/*=================Form==============*/
 	$('#submit').click(function() {
+		
 		var fName = $("#fname").val();
 		var lName = $("#lname").val();
 		var email = $("#email").val();
 		var message = $("#message").val();
-		$("#back").append(fName);
+		$("#back").prepend("<p>Thank You For Your Message</p>" + fName);
 		var fName = $("#fname").val("");
 		var lName = $("#lname").val("");
 		var email = $("#email").val("");
@@ -33,7 +34,9 @@ $(function() {
 			$(this).css({
 				'transform': 'rotateY(0deg)'
 			}).dequeue();
+			$("#back").empty();			
 		});
+		
 	});
 	$(".hover").mouseleave(function() {
 		$(this).removeClass("hover");
@@ -62,6 +65,7 @@ $(function() {
 			$("li.shoping-bag").removeClass("bag-fixed");
 		}
 	});
+	/*==========================Shopping cart========================*/
 	var itemCount = 0;
 	var priceTotal = 0;
 	$('.add-to-cart').click(function() {
@@ -76,6 +80,8 @@ $(function() {
 	$('.shoping-bag, #cartItems span').click(function() {
 		$('#shoppingCart').fadeToggle(1000);
 	});
+
+	/*=======================Removing item======================*/
 	$('#shoppingCart').on('click', '.removeItem', function() {
 		$(this).parent().remove();
 		itemCount--;

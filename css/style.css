@@ -139,6 +139,7 @@ ul.social-media li:last-child {
 	margin: auto;
 	display: block;
 	z-index: 0;
+	cursor: default;
 }
 #cartItems figcaption {
 	width: 100%;

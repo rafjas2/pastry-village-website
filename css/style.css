@@ -139,6 +139,7 @@ ul.social-media li:last-child {
 	margin: auto;
 	display: block;
 	z-index: 0;
+	cursor: auto;
 }
 #cartItems figcaption {
 	width: 100%;
@@ -585,6 +586,7 @@ section h1, section h2 {
 	text-decoration: none;
 	color: #603813;
 	background: #f9a64a;
+	cursor: pointer;
 }
 .shop .add-to-cart:hover {
 	background-color: #603813;

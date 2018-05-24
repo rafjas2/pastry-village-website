@@ -445,7 +445,7 @@ section h1, section h2 {
 	-moz-transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-}
+} 
 .products figcaption {
 	width: 100%;
 	font-size: 18px;
@@ -816,17 +816,25 @@ section.info iframe {
 	border-radius: 5px;
 }
 .social-media-footer {
-	width: 150px;
-	margin: 0 auto;
-	display: none;
+	width: 100%;
+    display: none;
+    float: left;
 }
 .social-media-footer li {
-	font-size: 33px;
-	float: left;
-	line-height: 60px;
-	margin: 0 10px;
-	vertical-align: middle;
+    width: 20%;
+    float: left;
+	font-size: 40px;
+    display: block;
+    line-height: 60px;
+    text-align: center;	
+    margin: 0 0 2%;
 }
+.social-media-footer li:first-child {
+    margin: 0 0 0 20%;
+}
+.social-media-footer li:last-child {
+    margin: 0 20% 0 0;
+} 
 footer .social-media-footer li a {
 	color: #f9a64a;
 }
@@ -1084,7 +1092,13 @@ footer h5 span {
 	}
 	.close {
 		font-size: 50px;
-	}
+    }
+    .products:hover .photo {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
 	/*================Shop Page=========================*/
 	.shop {
 		width: 49.5%;
@@ -1143,8 +1157,18 @@ footer h5 span {
 		height: 250px;
 	}
 	.social-media-footer {
-		display: block;
-	}
+        display: block;
+    }
+    
+    section.info h4 {
+        font-size: 24px;
+    }
+    section.info ul li {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+   
+    
 }
 /*=========================================Media 480px===========================*/
 
